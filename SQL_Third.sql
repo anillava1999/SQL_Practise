@@ -49,9 +49,6 @@ Output:
 */
 
 # Write your MySQL query statement below
-select name, population, area from 
-    ( select name,population,area from World
-order by population Desc 
-Limit 2
-) as topcountry
-order by name;
+SELECT NAME,POPULATION,AREA 
+FROM WORLD
+WHERE AREA >=3000000 OR POPULATION >= 25000000
